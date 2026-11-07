@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>সরকারি ICT খাতের দুরবস্থা | অনুসন্ধানী প্রামাণ্যচিত্র তথ্যসূত্র আর্কাইভ</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Anek Bangla -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bdnight: {
+                            bg: '#07130F',
+                            surface: '#0D211A',
+                            surfaceHover: '#122B22',
+                            border: '#1E4638',
+                            red: '#F42A41',
+                            accent: '#2ECC8F',
+                            text: '#F2F8F4',
+                            muted: '#A3C2B5'
+                        }
+                    },
+                    fontFamily: {
+                        bangla: ['"Anek Bangla"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Anek Bangla', sans-serif;
+            background-color: #07130F;
+            color: #F2F8F4;
+            background-image: 
+                radial-gradient(circle at 12% 10%, rgba(244, 42, 65, 0.14) 0%, transparent 42%),
+                radial-gradient(circle at 88% 85%, rgba(46, 204, 143, 0.12) 0%, transparent 45%),
+                linear-gradient(to bottom, rgba(7, 19, 15, 0.98), rgba(7, 19, 15, 1));
+            background-attachment: fixed;
+        }
+
+        /* Investigative Grid Overlay - Md Sifatul Islam Green Tint */
+        .bg-grid-pattern {
+            background-size: 36px 36px;
+            background-image: 
+                linear-gradient(to right, rgba(30, 70, 56, 0.25) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(30, 70, 56, 0.25) 1px, transparent 1px);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #07130F;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1E4638;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #F42A41;
+        }
+
+        .card-shadow {
+            box-shadow: 0 12px 32px -10px rgba(0, 0, 0, 0.75);
+        }
+        .card-shadow:hover {
+            box-shadow: 0 16px 38px -8px rgba(46, 204, 143, 0.22);
+        }
+
+        @keyframes pulseSlow {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.35; }
+        }
+        .pulse-badge {
+            animation: pulseSlow 2s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col bg-grid-pattern selection:bg-[#F42A41] selection:text-white">
+
+    <!-- Top Urgent Investigative Ticker -->
+    <div class="bg-[#0D211A] border-b border-[#1E4638] py-2.5 px-4 sticky top-0 z-50 backdrop-blur-md bg-opacity-95">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3 text-xs sm:text-sm">
+            <div class="flex items-center gap-2.5">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded bg-[#F42A41] text-white font-bold tracking-wider uppercase text-xs">
+                    <span class="w-2 h-2 rounded-full bg-white pulse-badge"></span>
+                    Md Sifatul Islam
+                </span>
+                <span class="text-[#F2F8F4] font-medium">
+                    অনুসন্ধানী প্রামাণ্যচিত্রের দালিলিক আর্কাইভ • ভেরিফায়েড তথ্যসূত্র ডিরেক্টরি
+                </span>
+            </div>
+            <div class="flex items-center gap-4 text-xs">
+                <a href="#script-matrix" class="text-[#2ECC8F] hover:underline font-semibold">স্ক্রিপ্ট বনাম প্রমাণ ম্যাট্রিক্স</a>
+                <span class="text-[#1E4638]">|</span>
+                <a href="#evidence-cards" class="text-[#A3C2B5] hover:text-white transition">২১+ অনুসন্ধানী কার্ড</a>
+                <span class="text-[#1E4638]">|</span>
+                <a href="#legal-disclaimer" class="text-[#A3C2B5] hover:text-white transition">আইনি সুরক্ষা ঘোষণাপত্র</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="pt-12 pb-10 px-4 sm:px-8 lg:px-16 max-w-7xl mx-auto w-full">
+        <div class="text-center max-w-4xl mx-auto mb-10">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#F42A41]/15 border border-[#F42A41]/50 text-[#F42A41] text-xs sm:text-sm font-semibold mb-5">
+                <span class="w-2.5 h-2.5 rounded-full bg-[#F42A41]"></span>
+                <span>অনুসন্ধানী প্রামাণ্যচিত্রের দালিলিক আর্কাইভ • Edition</span>
+            </div>
+
+            <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold text-[#F2F8F4] tracking-tight leading-tight">
+                সরকারি <span class="text-[#F42A41] underline decoration-[#F42A41]/50 decoration-wavy underline-offset-8">ICT খাতের</span> <span class="text-[#2ECC8F]">দুরবস্থা</span>
+            </h1>
+        </div>
+
+        <!-- 4 Key Investigative Metrics Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+            <div class="bg-[#0D211A] border border-[#1E4638] border-l-4 border-l-[#F42A41] rounded-xl p-5 card-shadow">
+                <div class="text-xs font-bold uppercase tracking-wider text-[#F42A41] mb-1">শেখ রাসেল ডিজিটাল ল্যাব ব্যয়</div>
+                <div class="text-2xl sm:text-3xl font-extrabold text-[#F2F8F4] mb-2">৪,২১১+ কোটি টাকা</div>
+                <p class="text-xs sm:text-sm text-[#A3C2B5] leading-snug">
+                    সিন্ডিকেটের মাধ্যমে ২-৩ গুণ দামে নিম্নমানের ল্যাপটপ ক্রয়; ইন্টারনেট ও শিক্ষকের অভাবে ল্যাবগুলো আজ তালাবদ্ধ গুদামঘর।
+                </p>
+            </div>
+
+            <div class="bg-[#0D211A] border border-[#1E4638] border-l-4 border-l-[#2ECC8F] rounded-xl p-5 card-shadow">
+                <div class="text-xs font-bold uppercase tracking-wider text-[#2ECC8F] mb-1">জেলা আইটি ইনকিউবেশন সেন্টার</div>
+                <div class="text-2xl sm:text-3xl font-extrabold text-[#2ECC8F] mb-2">১,৩৭১ কোটি টাকা</div>
+                <p class="text-xs sm:text-sm text-[#A3C2B5] leading-snug">
+                    ২২ জেলায় অতিরিক্ত জমিতে ১৩০ কোটি ও ২ তলার বদলে ৬ তলা কংক্রিট ভবনে ১১০ কোটি টাকা অপচয়। ভেতরে নেই কোনো ফ্রিল্যান্সার।
+                </p>
+            </div>
+
+            <div class="bg-[#0D211A] border border-[#1E4638] border-l-4 border-l-[#F42A41] rounded-xl p-5 card-shadow">
+                <div class="text-xs font-bold uppercase tracking-wider text-[#F42A41] mb-1">এডিপি থেকে সদ্য বাতিলকৃত প্রকল্প</div>
+                <div class="text-2xl sm:text-3xl font-extrabold text-[#F2F8F4] mb-2">৮,৬১৫+৬,৭৫৫ কোটি</div>
+                <p class="text-xs sm:text-sm text-[#A3C2B5] leading-snug">
+                    অক্টোবর ২০২৬-এ ৮,৬১৫ কোটির ৯টি অচল প্রকল্প বাতিল এবং পূর্বে ৬,৭৫৫ কোটি টাকা গচ্চা দিয়ে ২৯টি অসমাপ্ত প্রকল্প বাতিল।
+                </p>
+            </div>
+
+            <div class="bg-[#0D211A] border border-[#1E4638] border-l-4 border-l-[#2ECC8F] rounded-xl p-5 card-shadow">
+                <div class="text-xs font-bold uppercase tracking-wider text-[#2ECC8F] mb-1">নাগরিক সার্ভার অচলাবস্থা (BDRIS)</div>
+                <div class="text-2xl sm:text-3xl font-extrabold text-[#2ECC8F] mb-2">৭ দিন সার্ভার ডাউন</div>
+                <p class="text-xs sm:text-sm text-[#A3C2B5] leading-snug">
+                    ১৯–২৫ অক্টোবর ২০২৬ টানা ৭ দিন জন্ম ও মৃত্যু নিবন্ধন সার্ভার সম্পূর্ণ বন্ধ এবং এনআইডি-পাসপোর্ট ডেটাবেজের আন্তঃসংযোগহীনতা।
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Script-to-Evidence Verification Matrix Table -->
+    <section id="script-matrix" class="px-4 sm:px-8 lg:px-16 max-w-7xl mx-auto w-full pb-12">
+        <div class="bg-[#0D211A] border border-[#1E4638] rounded-2xl overflow-hidden shadow-2xl">
+            <div class="p-6 border-b border-[#1E4638] bg-[#07130F]/70 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-[#F42A41]">অ্যাক্ট ১ থেকে অ্যাক্ট ৪ ভেরিফিকেশন (স্ক্রিপ্ট-টু-এভিডেন্স ম্যাট্রিক্স)</span>
+                    <h2 class="text-xl sm:text-2xl font-bold text-[#F2F8F4] mt-1">
+                        প্রামাণ্যচিত্রের ভয়েস স্ক্রিপ্ট বনাম দালিলিক তথ্যসূত্র সারণি
+                    </h2>
+                </div>
+                <span class="px-3.5 py-1.5 rounded-full bg-[#2ECC8F]/15 border border-[#2ECC8F]/40 text-[#2ECC8F] text-xs font-semibold self-start sm:self-center">
+                    ১ম ঘটনা: নির্মাতার নিজের জীবনের বাস্তব অভিজ্ঞতা (২০২০)
+                </span>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-[#07130F] text-[#A3C2B5] text-xs sm:text-sm border-b border-[#1E4638]">
+                            <th class="py-4 px-5 font-bold">ডকুমেন্টারি অ্যাক্ট ও সময়</th>
+                            <th class="py-4 px-5 font-bold">ভয়েস স্ক্রিপ্টের মূল বক্তব্য / দাবি</th>
+                            <th class="py-4 px-5 font-bold">আর্থিক অংক / মূল তথ্য</th>
+                            <th class="py-4 px-5 font-bold">দালিলিক তথ্যসূত্র (APA 7)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-[#1E4638] text-xs sm:text-sm">
+                        <!-- Act 1 Row: Explicitly Highlighted as Creator Himself -->
+                        <tr class="bg-[#122B22]/70 hover:bg-[#122B22] transition border-l-4 border-l-[#2ECC8F]">
+                            <td class="py-4 px-5 font-extrabold text-[#2ECC8F] whitespace-nowrap align-top">
+                                অ্যাক্ট ১ (০:০০ - ১:১৫)
+                                <div class="mt-1 inline-block px-2 py-0.5 rounded bg-[#2ECC8F]/20 text-[#2ECC8F] text-[11px] font-bold">
+                                    নির্মাতার বাস্তব ঘটনা
+                                </div>
+                            </td>
+                            <td class="py-4 px-5 text-[#F2F8F4] align-top leading-relaxed">
+                                ১৫ নং ফুলহরী ইউনিয়ন পরিষদে (শৈলকূপা, ঝিনাইদহ) জন্মনিবন্ধন করতে বাবা-মায়ের জন্মনিবন্ধন দাবি, মায়ের স্মার্ট NID-তে বানান ভুল (<strong>"মোছাঃ মাখমুদা বেগম"</strong> ও বাবার নাম <strong>"ডাঃ আবুল হোসেন"</strong>) এবং শেষমেশ ১০০ টাকার কয়েকটি নোটে অনলাইন জন্মনিবন্ধন সমাধান।
+                            </td>
+                            <td class="py-4 px-5 text-[#F42A41] font-bold align-top">
+                                ১০০ টাকার নোট বাইপাস ও স্মার্ট কার্ডে বানান ভুল
+                            </td>
+                            <td class="py-4 px-5 text-[#F2F8F4] align-top leading-relaxed">
+                                <span class="text-[#2ECC8F] font-bold block mb-1">
+                                    ★ ডকুমেন্টারি নির্মাতা নিজে (মোঃ সিফাতুল ইসলাম - Creator Himself) — নির্মাতার নিজের জীবনের বাস্তব ঘটনা (২০২০ সালের প্রত্যক্ষ অভিজ্ঞতা)।
+                                </span>
+                                <span class="text-[#A3C2B5] text-xs block">
+                                    APA 7: <strong>Islam, M. S. (2020).</strong> <em>Real-life incident of Smart NID spelling errors and birth registration harassment at 15 No. Fulhari Union Parishad, Shailkupa, Jhenaidah</em> [নির্মাতার নিজস্ব প্রত্যক্ষ অভিজ্ঞতা ও বাস্তব ঘটনা]। (সহায়ক প্রেক্ষাপট: প্রথম আলো এনআইডি ভোগান্তি অনুসন্ধান ও টিআইবি রিপোর্ট)।
+                                </span>
+                            </td>
+                        </tr>
+
+                        <!-- Act 2 Row (Part A) -->
+                        <tr class="hover:bg-[#122B22]/50 transition">
+                            <td class="py-4 px-5 font-bold text-[#2ECC8F] whitespace-nowrap align-top">অ্যাক্ট ২ (১:১৫ - ২:০০)</td>
+                            <td class="py-4 px-5 text-[#F2F8F4] align-top leading-relaxed">
+                                "শেখ রাসেল ডিজিটাল ল্যাব" প্রজেক্টে সিন্ডিকেট করে বাজার দরের চেয়ে দুই থেকে তিনগুণ দামে নিম্নমানের ল্যাপটপ ক্রয় এবং ইন্টারনেট ও শিক্ষকের অভাবে তালাবদ্ধ গুদামঘরে পরিণত হওয়া।
+                            </td>
+                            <td class="py-4 px-5 text-[#F42A41] font-bold align-top">৪,২১১ কোটি টাকা</td>
+                            <td class="py-4 px-5 text-[#A3C2B5] align-top leading-relaxed">
+                                <strong>ICT Division. (2026).</strong> <em>ICT division white paper</em>; The Business Standard ও প্রথম আলো অনুসন্ধানী প্রতিবেদন।
+                            </td>
+                        </tr>
+
+                        <!-- Act 2 Row (Part B) -->
+                        <tr class="hover:bg-[#122B22]/50 transition">
+                            <td class="py-4 px-5 font-bold text-[#2ECC8F] whitespace-nowrap align-top">অ্যাক্ট ২ (২:০০ - ২:৪৫)</td>
+                            <td class="py-4 px-5 text-[#F2F8F4] align-top leading-relaxed">
+                                জেলা পর্যায়ে "আইটি ট্রেনিং ও ইনকিউবেশন সেন্টার"-এ কৃষিজমির ওপর ৬ তলা কংক্রিটের ভবন নির্মাণ (ইট-বালু-সিমেন্টে ঠিকাদারি কমিশন) এবং মেইনটেন্যান্স বাজেট ছাড়া শত শত মোবাইল অ্যাপ উধাও ও ১৬ কোটির অ্যানিমেশন।
+                            </td>
+                            <td class="py-4 px-5 text-[#F42A41] font-bold align-top">
+                                ১,৩৭১ কোটি টাকা (জমিতে ১৩০ কোটি ও ভবনে ১১০ কোটি অপচয়) + ১৬ কোটির ফিল্ম
+                            </td>
+                            <td class="py-4 px-5 text-[#A3C2B5] align-top leading-relaxed">
+                                <strong>Prothom Alo. (2025).</strong> <em>Wasteful projects in the name of Digital Bangladesh</em>; আইসিটি বিভাগের তদন্ত কমিটির প্রতিবেদন (২০২৪-২০২৫) ও শ্বেতপত্র (২০২৬)।
+                            </td>
+                        </tr>
+
+                        <!-- Act 3 Row -->
+                        <tr class="hover:bg-[#122B22]/50 transition">
+                            <td class="py-4 px-5 font-bold text-[#2ECC8F] whitespace-nowrap align-top">অ্যাক্ট ৩ (২:৪৫ - ৩:৪৫)</td>
+                            <td class="py-4 px-5 text-[#F2F8F4] align-top leading-relaxed">
+                                জন্মনিবন্ধন (BDRIS), NID ও পাসপোর্ট সার্ভার আলাদা থাকা, লোড পড়লেই সার্ভার ডাউন হওয়া, সিস্টেম ঠিক না করে ফ্যামিলি কার্ড/সিটিজেন কার্ড/স্বাস্থ্য কার্ড বিতরণের হিড়িক এবং অচল এডিপি প্রকল্প বাতিল।
+                            </td>
+                            <td class="py-4 px-5 text-[#F42A41] font-bold align-top">
+                                ৭ দিন BDRIS সার্ভার বন্ধ (১৯-২৫ অক্টোবর ২০২৬); ৮,৬১৫ কোটি ও ৬,৭৫৫ কোটির এডিপি প্রকল্প বাতিল
+                            </td>
+                            <td class="py-4 px-5 text-[#A3C2B5] align-top leading-relaxed">
+                                <strong>Office of the Registrar General. (2026, Oct 19)</strong>; <strong>Ministry of Planning & ECNEC. (2026, Oct)</strong>; The Business Standard ও bdnews24 প্রতিবেদন।
+                            </td>
+                        </tr>
+
+                        <!-- Act 4 Row -->
+                        <tr class="hover:bg-[#122B22]/50 transition">
+                            <td class="py-4 px-5 font-bold text-[#2ECC8F] whitespace-nowrap align-top">অ্যাক্ট ৪ (৩:৪৫ - ৫:০০)</td>
+                            <td class="py-4 px-5 text-[#F2F8F4] align-top leading-relaxed">
+                                সমাধান: ইট-পাথরের ভবন বন্ধ করে ক্লাউড সার্ভার ও অপটিক্যাল ফাইবারে বিনিয়োগ, "One API, One Nation" ইন্টারঅপারেবল ডেটাবেজ, ভেন্ডর সিন্ডিকেট ভেঙে দেশীয় সফটওয়্যার ইঞ্জিনিয়ারদের অগ্রাধিকার ও স্বাধীন টেকনিক্যাল অডিট।
+                            </td>
+                            <td class="py-4 px-5 text-[#2ECC8F] font-bold align-top">
+                                আর্কিটেকচারাল সংস্কার ও ওয়ান এপিআই প্রস্তাবনা
+                            </td>
+                            <td class="py-4 px-5 text-[#A3C2B5] align-top leading-relaxed">
+                                <strong>White Paper Drafting Committee. (2026).</strong> <em>White paper on the state of the Bangladesh economy</em>; BASIS ও CPD পলিসি পেপার।
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter & Search Controls Section -->
+    <section id="evidence-cards" class="px-4 sm:px-8 lg:px-16 max-w-7xl mx-auto w-full mb-8">
+        <div class="bg-[#0D211A] border border-[#1E4638] rounded-2xl p-4 sm:p-6 shadow-xl">
+            <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 mb-5">
+                <div>
+                    <h2 class="text-xl sm:text-2xl font-bold text-[#F2F8F4] flex items-center gap-2.5">
+                        <span class="w-3.5 h-3.5 rounded-full bg-[#F42A41]"></span>
+                        প্রামাণ্যচিত্রের সকল রেফারেন্স কার্ড, থাম্বনেইল ও সংবাদ লিংক (২১টি)
+                    </h2>
+                    <p class="text-xs sm:text-sm text-[#A3C2B5] mt-1">
+                        ১ নম্বর কার্ডটি ডকুমেন্টারি নির্মাতার নিজের জীবনের বাস্তব ঘটনার প্রত্যক্ষ বিবরণ এবং পরবর্তী কার্ডগুলো প্রকল্পের বরাদ্দ, দুর্নীতি ও সংবাদের মূল লিংক।
+                    </p>
+                </div>
+
+                <!-- Search Input -->
+                <div class="relative w-full lg:w-96">
+                    <input 
+                        type="text" 
+                        id="searchInput" 
+                        oninput="filterCards()"
+                        placeholder="প্রকল্প, টাকার অংক, ঝিনাইদহ বা পত্রিকা খুঁজুন..." 
+                        class="w-full bg-[#07130F] border border-[#1E4638] focus:border-[#2ECC8F] rounded-xl pl-10 pr-4 py-2.5 text-sm text-[#F2F8F4] placeholder-[#A3C2B5]/60 focus:outline-none transition"
+                    >
+                    <svg class="w-4 h-4 text-[#2ECC8F] absolute left-3.5 top-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Category Filter Buttons -->
+            <div class="flex flex-wrap gap-2" id="categoryButtons">
+                <button onclick="setCategory('all')" data-cat="all" class="cat-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition bg-[#F42A41] text-white cursor-pointer">
+                    সবগুলো (২১)
+                </button>
+                <button onclick="setCategory('creator-nid')" data-cat="creator-nid" class="cat-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-medium transition bg-[#07130F] text-[#A3C2B5] border border-[#1E4638] hover:border-[#2ECC8F] cursor-pointer">
+                    নির্মাতার প্রত্যক্ষ অভিজ্ঞতা ও এনআইডি ভোগান্তি
+                </button>
+                <button onclick="setCategory('ict-mega')" data-cat="ict-mega" class="cat-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-medium transition bg-[#07130F] text-[#A3C2B5] border border-[#1E4638] hover:border-[#2ECC8F] cursor-pointer">
+                    আইসিটি মেগা প্রজেক্ট ও লুটপাট
+                </button>
+                <button onclick="setCategory('server-adp')" data-cat="server-adp" class="cat-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-medium transition bg-[#07130F] text-[#A3C2B5] border border-[#1E4638] hover:border-[#2ECC8F] cursor-pointer">
+                    সার্ভার ডাউন ও এডিপি বাতিল
+                </button>
+                <button onclick="setCategory('whitepaper-policy')" data-cat="whitepaper-policy" class="cat-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-medium transition bg-[#07130F] text-[#A3C2B5] border border-[#1E4638] hover:border-[#2ECC8F] cursor-pointer">
+                    শ্বেতপত্র ও গবেষণা দলিল
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Cards Grid -->
+    <main class="px-4 sm:px-8 lg:px-16 max-w-7xl mx-auto w-full pb-16 flex-grow">
+        <div id="cardsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- JS will inject all 21 rich cards here -->
+        </div>
+
+        <!-- Empty State -->
+        <div id="emptyState" class="hidden text-center py-16 bg-[#0D211A] border border-[#1E4638] rounded-2xl">
+            <p class="text-lg text-[#2ECC8F] font-bold mb-2">কোনো তথ্যসূত্র খুঁজে পাওয়া যায়নি!</p>
+            <p class="text-sm text-[#A3C2B5] mb-4">অনুগ্রহ করে অন্য কোনো শব্দ দিয়ে খুঁজুন অথবা ফিল্টার রিসেট করুন।</p>
+            <button onclick="resetFilters()" class="px-4 py-2 rounded-xl bg-[#F42A41] text-white text-sm font-semibold cursor-pointer">সব কার্ড দেখুন</button>
+        </div>
+    </main>
+
+    <!-- Legal Safe-Harbor Disclaimer Footer -->
+    <footer id="legal-disclaimer" class="mt-auto border-t border-[#1E4638] bg-[#050E0B] pt-12 pb-10 px-4 sm:px-8 lg:px-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="bg-[#0D211A] border-l-4 border-[#2ECC8F] border border-[#1E4638] rounded-r-2xl p-6 mb-8">
+                <div class="flex items-start gap-4">
+                    <div class="p-2.5 rounded-xl bg-[#2ECC8F]/15 text-[#2ECC8F] shrink-0">
+                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-base sm:text-lg font-bold text-[#2ECC8F] mb-2">
+                            আইনি সুরক্ষা ও জনস্বার্থ ঘোষণাপত্র (Legal Safe-Harbor & Fair-Use Disclaimer)
+                        </h3>
+                        <p class="text-xs sm:text-sm text-[#F2F8F4] leading-relaxed mb-3">
+                            <strong>বাংলা:</strong> "সরকারি ICT খাতের দুরবস্থা" শীর্ষক প্রামাণ্যচিত্রের শুরুর ঘটনাটি (২০২০ সালে ঝিনাইদহের শৈলকূপার ১৫ নং ফুলহরী ইউনিয়ন পরিষদে জন্মনিবন্ধন ও স্মার্ট NID কার্ডে বানান ভুলের ভোগান্তি) <strong>ডকুমেন্টারি নির্মাতা মোঃ সিফাতুল ইসলামের নিজের জীবনের বাস্তব ঘটনা ও প্রত্যক্ষ অভিজ্ঞতা</strong>। এছাড়া প্রামাণ্যচিত্রে উপস্থাপিত সকল আর্থিক পরিসংখ্যান, প্রকল্পের ব্যয় ও দুর্নীতির তথ্যগুলো বাংলাদেশ সরকারের তথ্য ও যোগাযোগ প্রযুক্তি (আইসিটি) বিভাগের শ্বেতপত্র, অর্থনীতির শ্বেতপত্র, বাস্তবায়ন পরিবীক্ষণ ও মূল্যায়ন বিভাগ (IMED)-এর অডিট প্রতিবেদন, ট্রান্সপারেন্সি ইন্টারন্যাশনাল বাংলাদেশ (TIB) এবং দেশের শীর্ষস্থানীয় নিবন্ধিত গণমাধ্যমে প্রকাশিত অনুসন্ধানী প্রতিবেদন থেকে সংগৃহীত। জনস্বার্থে (Public Interest) এবং সাংবাদিকতার ন্যায্য ব্যবহারের (Fair Use) নীতিমালা অনুসরণ করে এই বিশ্লেষণধর্মী প্রামাণ্যচিত্রটি নির্মিত হয়েছে।
+                        </p>
+                        <p class="text-xs text-[#A3C2B5] leading-relaxed italic">
+                            <strong>English:</strong> The opening narrative of this documentary is the direct, real-life personal experience of the documentary creator himself (Md Sifatul Islam, 2020). All national financial figures, project costs, and audit findings presented are sourced from official government White Papers, IMED audit reports, TIB research, and published journalistic investigations in the public interest.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#A3C2B5] border-t border-[#1E4638]/60 pt-6">
+                <div>
+                    প্রামাণ্যচিত্র প্রকল্প: <strong class="text-[#F2F8F4]">"সরকারি ICT খাতের দুরবস্থা"</strong> | ডকুমেন্টারি নির্মাতা ও ১ম ঘটনার প্রত্যক্ষ সূত্র: <strong class="text-[#2ECC8F]">মোঃ সিফাতুল ইসলাম (Md Sifatul Islam)</strong>
+                </div>
+                <div>
+                    ফন্ট: Anek Bangla | থিম:  (#07130F / #F42A41 / #2ECC8F)
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification for Copy Action -->
+    <div id="toastBox" class="fixed bottom-6 right-6 z-50 hidden bg-[#0D211A] border-2 border-[#2ECC8F] text-[#F2F8F4] px-5 py-3.5 rounded-xl shadow-2xl flex items-center gap-3">
+        <span class="w-2.5 h-2.5 rounded-full bg-[#2ECC8F]"></span>
+        <span id="toastMessage" class="text-sm font-semibold">সাইটেশন ক্লিপবোর্ডে কপি হয়েছে!</span>
+    </div>
+
+    <!-- JavaScript Data & Logic -->
+    <script>
+        const referencesData = [
+            {
+                id: 1,
+                category: "creator-nid",
+                categoryLabel: "নির্মাতার বাস্তব জীবনের ঘটনা (২০২০)",
+                badgeColor: "accent",
+                financialTag: "নির্মাতা নিজে • ১০০ টাকার নোট বাইপাস",
+                title: "১৫ নং ফুলহরী ইউনিয়ন পরিষদে জন্মনিবন্ধন ও মায়ের স্মার্ট NID-তে বানান ভুল: নির্মাতার নিজের জীবনের বাস্তব ঘটনা",
+                summary: "২০২০ সালে কলেজে স্টুডেন্ট প্রোফাইল বানানোর জন্য অনলাইন জন্মনিবন্ধন করতে গিয়ে ঝিনাইদহের শৈলকূপার ১৫ নং ফুলহরী ইউনিয়ন পরিষদে নির্মাতার নিজের জীবনের প্রত্যক্ষ অভিজ্ঞতা। পঞ্চাশোর্ধ্ব বাবা-মায়ের জন্মনিবন্ধন আগে করার আজব নিয়ম, মায়ের স্মার্ট NID কার্ডে 'মোছাঃ মাখমুদা বেগম' (আসল: মাকমুদা) ও নানার নাম 'ডাঃ আবুল হোসেন' (আসল: আবুল হাসেম) ভুল এবং শেষমেশ কয়েকটি ১০০ টাকার নোটের বিনিময়ে অনলাইন জন্মনিবন্ধন প্রাপ্তি।",
+                sourceName: "ডকুমেন্টারি নির্মাতা নিজে (মোঃ সিফাতুল ইসলাম - Creator Himself) — নিজের জীবনের বাস্তব ঘটনা",
+                date: "সাল ২০২০ (প্রত্যক্ষ ঘটনা)",
+                image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=800&q=80",
+                newsStamp: "★ নির্মাতা নিজে (Creator's Real Life Incident)",
+                url: "#script-matrix",
+                isCreatorCard: true,
+                apaCitation: "Islam, M. S. (2020). Real-life incident of Smart NID spelling errors and birth registration harassment at 15 No. Fulhari Union Parishad, Shailkupa, Jhenaidah [ডকুমেন্টারি নির্মাতা নিজে — নির্মাতার নিজের জীবনের বাস্তব ঘটনা ও প্রত্যক্ষ অভিজ্ঞতা]."
+            },
+            {
+                id: 2,
+                category: "ict-mega",
+                categoryLabel: "আইসিটি মেগা প্রজেক্ট ও লুটপাট (অ্যাক্ট ২)",
+                badgeColor: "red",
+                financialTag: "ব্যয়: ৪,২১১ কোটি টাকা",
+                title: "শেখ রাসেল ডিজিটাল ল্যাব ও মোবাইল অ্যাপের নামে হাজার কোটি টাকার হরিলুট: আইসিটি শ্বেতপত্র প্রকাশ",
+                summary: "প্রায় ৪,২১১ কোটি টাকা ব্যয়ে বাস্তবায়িত শেখ রাসেল ডিজিটাল ল্যাব প্রকল্পে ভেন্ডর সিন্ডিকেট বাজার দরের চেয়ে দুই থেকে তিনগুণ দামে নিম্নমানের ল্যাপটপ সরবরাহ করেছে। ইন্টারনেট ও শিক্ষকের অভাবে আজ সেই ল্যাবগুলো তালাবদ্ধ গুদামঘর।",
+                sourceName: "আইসিটি বিভাগ শ্বেতপত্র ২০২৬ ও দ্য বিজনেস স্ট্যান্ডার্ড (TBS)",
+                date: "জানুয়ারি ২০২৬",
+                image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80",
+                newsStamp: "TBS / ICT White Paper • ৪,২১১ কোটি টাকা",
+                url: "https://www.tbsnews.net/bangladesh/ict-divisions-white-paper-published-1329316",
+                apaCitation: "ICT Division. (2026). ICT division white paper. The Business Standard. https://www.tbsnews.net/bangladesh/ict-divisions-white-paper-published-1329316"
+            },
+            {
+                id: 3,
+                category: "ict-mega",
+                categoryLabel: "আইসিটি মেগা প্রজেক্ট ও লুটপাট (অ্যাক্ট ২)",
+                badgeColor: "red",
+                financialTag: "বরাদ্দ: ১,৩৭১ কোটি | অপচয়: ২৪০+ কোটি",
+                title: "জেলা আইটি ট্রেনিং ও ইনকিউবেশন সেন্টার: কৃষিজমিতে ৬ তলা কংক্রিটের ভবন ও ইট-বালু-সিমেন্টে কমিশন",
+                summary: "৮ জেলায় ৫৩৪ কোটি ও ১৪ জেলায় ৮৩৭ কোটি টাকার (মোট ১,৩৭১ কোটি) প্রকল্পে ১-৫ একর অপ্রয়োজনীয় জমি অধিগ্রহণে ১৩০ কোটি টাকা এবং ২ তলার বদলে ৬ তলা কংক্রিট ভবন নির্মাণে ১১০ কোটি টাকা অপচয়। ভবন দাঁড়িয়ে থাকলেও ভেতরে নেই কোনো ফ্রিল্যান্সার বা আইটি ইকোসিস্টেম।",
+                sourceName: "প্রথম আলো (Prothom Alo) ও আইসিটি তদন্ত কমিটি রিপোর্ট",
+                date: "২০২৫",
+                image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
+                newsStamp: "Prothom Alo • ১,৩৭১ কোটি টাকার প্রকল্প",
+                url: "https://en.prothomalo.com/bangladesh/bopogz3sed",
+                apaCitation: "Prothom Alo. (2025). Wasteful projects in the name of Digital Bangladesh: District IT Training and Incubation Centres. https://en.prothomalo.com/bangladesh/bopogz3sed"
+            },
+            {
+                id: 4,
+                category: "server-adp",
+                categoryLabel: "সার্ভার ডাউন ও এডিপি বাতিল (অ্যাক্ট ৩)",
+                badgeColor: "red",
+                financialTag: "১৯–২৫ অক্টোবর ২০২৬ (৭ দিন সার্ভার বন্ধ)",
+                title: "জন্ম ও মৃত্যু নিবন্ধন (BDRIS) সার্ভার রক্ষণাবেক্ষণের নামে টানা ৭ দিন সম্পূর্ণ বন্ধ: সারাদেশে নাগরিক ভোগান্তি",
+                summary: "কেন্দ্রীয় সার্ভারের সক্ষমতা না থাকায় ১৯ থেকে ২৫ অক্টোবর ২০২৬ পর্যন্ত টানা সাত দিন জন্ম ও মৃত্যু নিবন্ধনের সকল অনলাইন সেবা বন্ধ ঘোষণা করা হয়, যা দেশের কোর আইটি অবকাঠামোর ভঙ্গুর দশাকে প্রমাণ করে।",
+                sourceName: "রেজিস্ট্রার জেনারেলের কার্যালয় ও দ্য বিজনেস স্ট্যান্ডার্ড (TBS)",
+                date: "১৯ অক্টোবর ২০২৬",
+                image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
+                newsStamp: "TBS News • BDRIS 7-Day Shutdown",
+                url: "https://www.tbsnews.net/bangladesh/birth-death-registration-services-suspended-seven-days-1578741",
+                apaCitation: "Office of the Registrar General, Birth and Death Registration. (2026, October 19). Birth, death registration services suspended for seven days. The Business Standard. https://www.tbsnews.net/bangladesh/birth-death-registration-services-suspended-seven-days-1578741"
+            },
+            {
+                id: 5,
+                category: "server-adp",
+                categoryLabel: "সার্ভার ডাউন ও এডিপি বাতিল (অ্যাক্ট ৩)",
+                badgeColor: "red",
+                financialTag: "বাতিল: ৮,৬১৫ কোটি টাকার ৯টি প্রকল্প",
+                title: "এডিপি (ADP) থেকে ৮,৬১৫ কোটি টাকার ৯টি অযৌক্তিক প্রকল্প বাতিল ও ৩২টি প্রকল্প একীভূত করার সিদ্ধান্ত",
+                summary: "অক্টোবর ২০২৬-এ পরিকল্পনা কমিশন ও সরকার ব্যয় সংকোচন এবং অকেজো প্রকল্প ছাঁটাইয়ের অংশ হিসেবে ৮,৬১৫ কোটি টাকার ৯টি উন্নয়ন প্রকল্প বাতিল করে, যার মধ্যে শূন্য অগ্রগতির গবেষণা ও পলিটেকনিক সম্প্রসারণ প্রকল্প ছিল।",
+                sourceName: "পরিকল্পনা মন্ত্রণালয় ও দ্য বিজনেস স্ট্যান্ডার্ড (TBS)",
+                date: "অক্টোবর ২০২৬",
+                image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80",
+                newsStamp: "TBS Report • ৮,৬১৫ কোটি টাকার প্রকল্প বাতিল",
+                url: "https://www.tbsnews.net/bangladesh/govt-scraps-9-adp-projects-merges-32-tighten-fiscal-belt-1578911",
+                apaCitation: "Ministry of Planning & ECNEC. (2026, October). Govt scraps 9 ADP projects, merges 32 to tighten fiscal belt. The Business Standard. https://www.tbsnews.net/bangladesh/govt-scraps-9-adp-projects-merges-32-tighten-fiscal-belt-1578911"
+            },
+            {
+                id: 6,
+                category: "whitepaper-policy",
+                categoryLabel: "শ্বেতপত্র ও গবেষণা দলিল",
+                badgeColor: "red",
+                financialTag: "সবচেয়ে দুর্নীতিগ্রস্ত খাতের তালিকায় আইসিটি",
+                title: "ডিজিটাল বাংলাদেশের আড়ালে আইসিটি খাতই ছিল অন্যতম শীর্ষ দুর্নীতিগ্রস্ত খাত: শ্বেতপত্র কমিটির প্রতিবেদন",
+                summary: "গত ১৫ বছরে ডিজিটাল বাংলাদেশের নামে নেওয়া প্রকল্পগুলোতে ঠিকাদার ও ভেন্ডর সিন্ডিকেটের স্বার্থে শত শত কোটি টাকার হার্ডওয়্যার ও কংক্রিট প্রকল্প নেওয়া হয়েছে, যেখানে নাগরিক সেবার মূল অবকাঠামো উপেক্ষিত ছিল।",
+                sourceName: "দ্য বিজনেস স্ট্যান্ডার্ড (The Business Standard)",
+                date: "ডিসেম্বর ২০২৪ / ২০২৬",
+                image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80",
+                newsStamp: "TBS Exclusive • ICT White Paper Findings",
+                url: "https://www.tbsnews.net/tech/ict/ict-among-most-corruption-affected-sectors-white-paper-1007471",
+                apaCitation: "The Business Standard. (2024). ICT among most corruption-affected sectors: White Paper. https://www.tbsnews.net/tech/ict/ict-among-most-corruption-affected-sectors-white-paper-1007471"
+            },
+            {
+                id: 7,
+                category: "creator-nid",
+                categoryLabel: "নির্মাতার প্রত্যক্ষ অভিজ্ঞতা ও এনআইডি ভোগান্তি",
+                badgeColor: "red",
+                financialTag: "৫ কোটি+ নাগরিকের ব্যক্তিগত তথ্য ফাঁস",
+                title: "জন্মনিবন্ধন ও সরকারি ওয়েবসাইটের দুর্বলতায় কোটি বাংলাদেশি নাগরিকের ব্যক্তিগত তথ্য ও এনআইডি ফাঁস",
+                summary: "জন্ম ও মৃত্যু নিবন্ধন অফিসের অরক্ষিত ওয়েবসাইট থেকে লক্ষ লক্ষ নাগরিকের নাম, পিতা-মাতার নাম, ফোন নম্বর ও এনআইডি নম্বর উন্মুক্ত হয়ে পড়ার আন্তর্জাতিকভাবে আলোচিত ঘটনা।",
+                sourceName: "দ্য ডেইলি স্টার (The Daily Star)",
+                date: "জুলাই ২০২৩",
+                image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80",
+                newsStamp: "The Daily Star • Personal Data Leaked",
+                url: "https://www.thedailystar.net/news/bangladesh/news/personal-data-millions-leaked-govt-website-3365021",
+                apaCitation: "The Daily Star. (2023, July 8). Personal data of millions leaked from govt website. https://www.thedailystar.net/news/bangladesh/news/personal-data-millions-leaked-govt-website-3365021"
+            },
+            {
+                id: 8,
+                category: "creator-nid",
+                categoryLabel: "নির্মাতার প্রত্যক্ষ অভিজ্ঞতা ও এনআইডি ভোগান্তি",
+                badgeColor: "accent",
+                financialTag: "স্মার্ট কার্ডে ভুল ও অন্তহীন ভোগান্তি",
+                title: "এনআইডি সংশোধনের অন্তহীন দুঃস্বপ্ন: সাধারণ কার্ড থেকে স্মার্ট কার্ডে নামের বানান ভুল ও হয়রানি",
+                summary: "প্রামাণ্যচিত্রের ১ম অ্যাক্টে নির্মাতার মায়ের স্মার্ট কার্ডের বানান ভুলের ঘটনার মতোই সারাদেশে লক্ষ লক্ষ নাগরিকের এনআইডি বানান ভুল ও তা সংশোধনে চরম ভোগান্তি নিয়ে বিশেষ অনুসন্ধানী প্রতিবেদন।",
+                sourceName: "দ্য বিজনেস স্ট্যান্ডার্ড (The Business Standard)",
+                date: "২০২৫",
+                image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=800&q=80",
+                newsStamp: "TBS Panorama • NID Correction Nightmare",
+                url: "https://www.tbsnews.net/features/panorama/never-ending-nightmare-nid-corrections-bangladesh-1099006",
+                apaCitation: "The Business Standard. (2025). The never-ending nightmare of NID corrections in Bangladesh. https://www.tbsnews.net/features/panorama/never-ending-nightmare-nid-corrections-bangladesh-1099006"
+            },
+            {
+                id: 9,
+                category: "ict-mega",
+                categoryLabel: "আইসিটি মেগা প্রজেক্ট ও লুটপাট (অ্যাক্ট ২)",
+                badgeColor: "red",
+                financialTag: "৫০০+ অচল অ্যাপ ও ১৬ কোটির অ্যানিমেশন",
+                title: "মেইনটেন্যান্স বাজেট ছাড়া শত শত সরকারি মোবাইল অ্যাপ উধাও ও মাল্টিমিডিয়া প্রকল্পের নামে তহবিল তছরুপ",
+                summary: "ডিজিটাল উদ্ভাবনের নামে ৪,২০০+ কোটি টাকা খরচের মধ্যে শত শত মোবাইল অ্যাপ তৈরি করা হয়, যা উদ্বোধনের কয়েক মাস পরই রক্ষণাবেক্ষণ বাজেটের অভাবে অচল হয়ে উধাও হয়ে যায়। এছাড়া একটি অ্যানিমেশন ফিল্মেই ব্যয় হয় ১৬ কোটি টাকা।",
+                sourceName: "প্রথম আলো ইংলিশ (Prothom Alo English)",
+                date: "২০২৫",
+                image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80",
+                newsStamp: "Prothom Alo • Ghost Apps & ICT Waste",
+                url: "https://en.prothomalo.com/bangladesh/dh0rt8fo7l",
+                apaCitation: "Prothom Alo. (2025). Audit on abandoned government mobile applications and multimedia schemes in ICT sector. https://en.prothomalo.com/bangladesh/dh0rt8fo7l"
+            },
+            {
+                id: 10,
+                category: "ict-mega",
+                categoryLabel: "আইসিটি মেগা প্রজেক্ট ও লুটপাট",
+                badgeColor: "red",
+                financialTag: "হাজার কোটি টাকার ফাঁকা হাই-টেক পার্ক",
+                title: "হাই-টেক ও সফটওয়্যার পার্কগুলো প্রতিশ্রুতি পূরণে ব্যর্থ: বিলিয়ন টাকার ভবনে প্রযুক্তি কোম্পানির বদলে শূন্যতা",
+                summary: "রিমোট জেলায় হাই-টেক পার্ক নির্মাণের নামে হাজার কোটি টাকা ব্যয় করা হলেও নিবিড় ইন্টারনেট ও ইকোসিস্টেম না থাকায় দেশি-বিদেশি সফটওয়্যার কোম্পানিগুলো সেখানে যায়নি। অনেক ভবন আজ লোকসানে চলছে।",
+                sourceName: "দ্য ডেইলি স্টার (The Daily Star)",
+                date: "২০২৫",
+                image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80",
+                newsStamp: "The Daily Star • High-Tech Parks Fail",
+                url: "https://www.thedailystar.net/business/news/high-tech-parks-fail-deliver-promise-4271156",
+                apaCitation: "The Daily Star. (2025). High-tech parks fail to deliver on promise. https://www.thedailystar.net/business/news/high-tech-parks-fail-deliver-promise-4271156"
+            },
+            {
+                id: 11,
+                category: "ict-mega",
+                categoryLabel: "আইসিটি মেগা প্রজেক্ট ও লুটপাট",
+                badgeColor: "red",
+                financialTag: "ব্যয়: ৩০০+ কোটি টাকা (LEDP প্রকল্প)",
+                title: "লার্নিং অ্যান্ড আর্নিং ডেভেলপমেন্ট প্রজেক্ট (LEDP): ভুয়া প্রশিক্ষণ ব্যাচ ও রাজনৈতিক সুপারিশে ল্যাপটপ বিতরণ",
+                summary: "ফ্রিল্যান্সার তৈরির নামে ৩০০ কোটি টাকার বেশি খরচের প্রকল্পে নকল উপস্থিতি শিট ও সাব-কন্ট্রাক্টরদের মাধ্যমে ৬০% পর্যন্ত অর্থ লোপাট এবং রাজনৈতিক বিবেচনায় ল্যাপটপ বিতরণের অডিট তথ্য।",
+                sourceName: "দ্য গুড মর্নিং (The Good Morning) ও আইসিটি অডিট",
+                date: "২০২৪ / ২০২৫",
+                image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80",
+                newsStamp: "The Good Morning • LEDP Audit Report",
+                url: "https://thegoodmorning.net/archives/28013",
+                apaCitation: "The Good Morning. (2024). Learning and Earning Development Project (LEDP): Irregularities and missed targets. https://thegoodmorning.net/archives/28013"
+            },
+            {
+                id: 12,
+                category: "server-adp",
+                categoryLabel: "সার্ভার ডাউন ও এডিপি বাতিল",
+                badgeColor: "red",
+                financialTag: "গচ্চা: ৬,৭৫৫ কোটি টাকা (২৯টি প্রকল্প)",
+                title: "ইতিমধ্যে ৬,৭৫৫ কোটি টাকা খরচের পর ২৯টি অযৌক্তিক ও অসমাপ্ত প্রকল্প এডিপি থেকে বাতিল",
+                summary: "সঠিক সম্ভাব্যতা যাচাই ছাড়া শুরু করা ২৯টি প্রকল্পে ৬,৭৫৫ কোটি টাকা খরচ হয়ে যাওয়ার পর সেগুলো অকার্যকর প্রমাণিত হওয়ায় সরকার তা পরিত্যক্ত ঘোষণা করতে বাধ্য হয়।",
+                sourceName: "দ্য বিজনেস স্ট্যান্ডার্ড (TBS) ও একনেক প্রতিবেদন",
+                date: "২০২৫",
+                image: "https://images.unsplash.com/photo-1541888946425-d09bb18086f6?auto=format&fit=crop&w=800&q=80",
+                newsStamp: "TBS Report • ৬,৭৫৫ কোটি টাকা গচ্চা",
+                url: "https://www.tbsnews.net/bangladesh/29-projects-scrapped-after-spending-tk6755cr-1333711",
+                apaCitation: "The Business Standard. (2025). 29 projects scrapped after spending Tk 6,755cr. https://www.tbsnews.net/bangladesh/29-projects-scrapped-after-spending-tk6755cr-1333711"
+            },
+            {
+                id: 13,
+                category: "whitepaper-policy",
+                categoryLabel: "শ্বেতপত্র ও গবেষণা দলিল",
+                badgeColor: "accent",
+                financialTag: "TIB গবেষণা: ডিজিটাল সেবায় ঘুষ বৃদ্ধি",
+                title: "টিআইবি (TIB) প্রতিবেদন: ডিজিটালাইজেশনের পরও সরকারি সেবায় দুর্নীতি ও ঘুষ কমেনি, বরং বেড়েছে",
+                summary: "ট্রান্সপারেন্সি ইন্টারন্যাশনাল বাংলাদেশ (TIB)-এর গবেষণায় প্রমাণিত হয়েছে যে, ব্যাকএন্ডে ম্যানুয়াল অনুমোদন ও সইয়ের ব্যবস্থা রেখে ফ্রন্টএন্ডে অনলাইন ফর্ম চালু করায় ইউনিয়ন পরিষদ ও সরকারি অফিসে ঘুষের লেনদেন অব্যাহত রয়েছে।",
+                sourceName: "দ্য ডেইলি স্টার (The Daily Star) / TIB রিপোর্ট",
+                date: "২০২৫",
+                image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80",
+                newsStamp: "The Daily Star • TIB Bribery Survey",
+                url: "https://www.thedailystar.net/news/bangladesh/news/bribes-rose-159-during-interim-govt-4208721",
+                apaCitation: "The Daily Star. (2025). Bribes in public service delivery: TIB survey findings. https://www.thedailystar.net/news/bangladesh/news/bribes-rose-159-during-interim-govt-4208721"
+            },
+            {
+                id: 14,
+                category: "creator-nid",
+                categoryLabel: "নির্মাতার প্রত্যক্ষ অভিজ্ঞতা ও এনআইডি ভোগান্তি",
+                badgeColor: "red",
+                financialTag: "ওটিপি (OTP) ও সার্ভার ত্রুটিতে এনআইডি বন্ধ",
+                title: "ওটিপি (OTP) গ্লিচ ও সার্ভার জটিলতায় সারাদেশে এনআইডি সেবা স্থবির: স্মার্ট কার্ড ও সার্ভার অব্যবস্থাপনা",
+                summary: "চিপ-লাগানো ডিজিটাল স্মার্ট কার্ড ও এনআইডি সার্ভারের কারিগরি ত্রুটির কারণে প্রায়ই সারাদেশে এনআইডি ভেরিফিকেশন ও সেবা বন্ধ হয়ে যায়, অথচ সরকার নতুন কার্ড বিতরণের পেছনে ছুটছে।",
+                sourceName: "দ্য ডেইলি স্টার (The Daily Star)",
+                date: "২০২৫",
+                image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=800&q=80",
+                newsStamp: "The Daily Star • NID OTP Glitch Nationwide",
+                url: "https://www.thedailystar.net/news/bangladesh/news/otp-glitch-halts-nid-services-nationwide-3893611",
+                apaCitation: "The Daily Star. (2025). OTP glitch halts NID services nationwide. https://www.thedailystar.net/news/bangladesh/news/otp-glitch-halts-nid-services-nationwide-3893611"
+            },
+            {
+                id: 15,
+                category: "ict-mega",
+                categoryLabel: "আইসিটি মেগা প্রজেক্ট ও লুটপাট",
+                badgeColor: "red",
+                financialTag: "ব্যয়: ২,০০০+ কোটি টাকা (ইনফো-সরকার ৩)",
+                title: "ইনফো-সরকার ফেজ ৩ প্রকল্পে ব্যাপক অনিয়ম: ইউনিয়ন পর্যায়ে নিম্নমানের ফাইবার কেবল ও অচল নেটওয়ার্ক",
+                summary: "ইউনিয়ন পর্যায়ে উচ্চগতির ইন্টারনেট পৌঁছানোর নামে ২ হাজার কোটি টাকার বেশি খরচের ইনফো-সরকার ৩ প্রকল্পে টেন্ডার কারসাজি ও অনিয়মের কারণে মাঠপর্যায়ে নাগরিকরা সুফল পায়নি।",
+                sourceName: "দ্য ডেইলি স্টার (The Daily Star)",
+                date: "২০১৭ / ২০২৪ অডিট",
+                image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80",
+                newsStamp: "The Daily Star • Info-Sarker 3 Irregularities",
+                url: "https://www.thedailystar.net/business/irregularities-info-sarker-3-project-1453246",
+                apaCitation: "The Daily Star. (2017, August 24). Irregularities in Info-Sarker 3 project. https://www.thedailystar.net/business/irregularities-info-sarker-3-project-1453246"
+            },
+            {
+                id: 16,
+                category: "whitepaper-policy",
+                categoryLabel: "শ্বেতপত্র ও গবেষণা দলিল",
+                badgeColor: "accent",
+                financialTag: "১.৬১–২.৮০ লাখ কোটি টাকা আত্মসাৎ (PDF)",
+                title: "বাংলাদেশের অর্থনীতির শ্বেতপত্র (পূর্ণাঙ্গ পিডিএফ): এডিপি প্রকল্পের ৩০% অর্থই ঘুষ ও ব্যয় বৃদ্ধিতে লোপাট",
+                summary: "অর্থনীতির শ্বেতপত্র কমিটির চূড়ান্ত প্রতিবেদনে প্রকাশ পায় যে, গত দেড় দশকে বার্ষিক উন্নয়ন কর্মসূচির (ADP) মাধ্যমে ১৪ থেকে ২৪ বিলিয়ন ডলার কৃত্রিম ব্যয় বৃদ্ধি, জমি অধিগ্রহণ সিন্ডিকেট ও ঘুষে লোপাট হয়েছে।",
+                sourceName: "অর্থনীতির শ্বেতপত্র কমিটি (White Paper Full Report PDF)",
+                date: "ডিসেম্বর ২০২৪ / ২০২৫",
+                image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80",
+                newsStamp: "Official White Paper PDF • ৩৯৮ পৃষ্ঠা",
+                url: "https://bdplatform4sdgs.net/wp-content/uploads/2025/02/Final-Draft_Unedited_0911-hrs_Compiled-Report-without-Front-and-Back-Cover.pdf",
+                apaCitation: "White Paper Drafting Committee. (2025). White paper on the state of the Bangladesh economy [Full compiled report PDF]. https://bdplatform4sdgs.net/wp-content/uploads/2025/02/Final-Draft_Unedited_0911-hrs_Compiled-Report-without-Front-and-Back-Cover.pdf"
+            },
+            {
+                id: 17,
+                category: "whitepaper-policy",
+                categoryLabel: "শ্বেতপত্র ও গবেষণা দলিল",
+                badgeColor: "red",
+                financialTag: "ব্যর্থ প্রকল্পে বিলিয়ন ডলার অপচয়",
+                title: "ব্যর্থ প্রকল্পে বিলিয়ন বিলিয়ন টাকা অপচয়: ত্রুটিপূর্ণ প্রকল্প পরিকল্পনাকারীরা কেন জবাবদিহির বাইরে থাকেন?",
+                summary: "ইচ্ছাকৃতভাবে ত্রুটিপূর্ণ ফিজিবিলিটি স্টাডি করে প্রকল্প অনুমোদন করিয়ে পরে ২য় ও ৩য় সংশোধিত ডিপিপির মাধ্যমে ব্যয় বহুগুণ বাড়ানো এবং পরিকল্পনাকারীদের দায়মুক্তির সংস্কৃতি নিয়ে অনুসন্ধান।",
+                sourceName: "দ্য বিজনেস স্ট্যান্ডার্ড (The Business Standard)",
+                date: "২০২৫",
+                image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80",
+                newsStamp: "TBS Investigation • Billions Wasted",
+                url: "https://www.tbsnews.net/bangladesh/infrastructure/billions-wasted-failed-projects-why-do-project-planners-walk-free-1336126",
+                apaCitation: "The Business Standard. (2025). Billions wasted in failed projects: Why do project planners walk free? https://www.tbsnews.net/bangladesh/infrastructure/billions-wasted-failed-projects-why-do-project-planners-walk-free-1336126"
+            },
+            {
+                id: 18,
+                category: "ict-mega",
+                categoryLabel: "আইসিটি মেগা প্রজেক্ট ও লুটপাট",
+                badgeColor: "red",
+                financialTag: "ভেন্ডর সিন্ডিকেট ও বিশ্বব্যাংকের কালো তালিকা",
+                title: "এনআইডি সিস্টেম প্রকল্পে দুর্নীতির দায়ে ভেন্ডর কোম্পানিকে বিশ্বব্যাংকের কালো তালিকাভুক্তি ও ভেন্ডর লক-ইন",
+                summary: "গুটিকয়েক ভেন্ডর সিন্ডিকেটের হাতে দেশের কোর আইটি ও এনআইডি প্রজেক্ট জিম্মি থাকার প্রমাণ; দুর্নীতির দায়ে বিশ্বব্যাংক কর্তৃক ঠিকাদারি প্রতিষ্ঠানকে কালো তালিকাভুক্ত করার ঐতিহাসিক প্রতিবেদন।",
+                sourceName: "দ্য ডেইলি স্টার (The Daily Star)",
+                date: "জুলাই ২০১৯ / রেফারেন্স আর্কাইভ",
+                image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+                newsStamp: "The Daily Star • Vendor Syndicate Blacklisted",
+                url: "https://www.thedailystar.net/backpage/news/project-nid-system-wb-blacklists-tiger-it-corruption-1779634",
+                apaCitation: "The Daily Star. (2019, July 31). Project on NID system: WB blacklists Tiger IT for corruption. https://www.thedailystar.net/backpage/news/project-nid-system-wb-blacklists-tiger-it-corruption-1779634"
+            },
+            {
+                id: 19,
+                category: "whitepaper-policy",
+                categoryLabel: "শ্বেতপত্র ও গবেষণা দলিল (অ্যাক্ট ৪)",
+                badgeColor: "accent",
+                financialTag: "One API ও জাতীয় ডেটাবেজ সংস্কার",
+                title: "বাংলাদেশ এনআইডি সার্ভিস আর্কাইভ: কেন এনআইডি, জন্মনিবন্ধন ও পাসপোর্ট ডেটাবেজকে 'One API'-এ যুক্ত করা জরুরি",
+                summary: "নাগরিকদের বারবার একই তথ্য প্রদানের ভোগান্তি কমাতে এবং এক জায়গায় সংশোধন করলে সব সার্ভারে অটোমেটিক আপডেটের জন্য ইন্টারঅপারেবল জাতীয় ডেটাবেজ সংক্রান্ত ডেইলি স্টারের ধারাবাহিক প্রতিবেদনসমূহ।",
+                sourceName: "দ্য ডেইলি স্টার (The Daily Star NID Service Dossier)",
+                date: "২০২৪ / ২০২৬",
+                image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80",
+                newsStamp: "The Daily Star • NID Interoperability Dossier",
+                url: "https://www.thedailystar.net/tags/bangladesh-nid-service",
+                apaCitation: "The Daily Star. (2025). Bangladesh NID service & database interoperability reports. https://www.thedailystar.net/tags/bangladesh-nid-service"
+            },
+            {
+                id: 20,
+                category: "whitepaper-policy",
+                categoryLabel: "শ্বেতপত্র ও গবেষণা দলিল (অ্যাক্ট ৪)",
+                badgeColor: "accent",
+                financialTag: "দেশীয় সফটওয়্যার ও প্রকৌশলীদের অগ্রাধিকার",
+                title: "আইটি খাতকে বাঁচাতে বিদেশি হার্ডওয়্যার ও কংক্রিটের বদলে দেশীয় সফটওয়্যার ক্রয়ের দাবি বিশেষজ্ঞদের",
+                summary: "প্রামাণ্যচিত্রের ৪র্থ অ্যাক্টে উল্লিখিত সমাধানের সমর্থনে বিশেষজ্ঞ মতামত: ভেন্ডর সিন্ডিকেট ভেঙে বাংলাদেশের নিজস্ব ট্যালেন্টেড সফটওয়্যার ইঞ্জিনিয়ারদের দিয়ে ওপেন সোর্স প্রযুক্তিতে সরকারি সিস্টেম তৈরি করা।",
+                sourceName: "দ্য ডেইলি স্টার (The Daily Star)",
+                date: "২০২৪",
+                image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80",
+                newsStamp: "The Daily Star • Domestic Software Priority",
+                url: "https://www.thedailystar.net/business/news/procure-more-domestic-software-boost-ict-sector-expert-3632451",
+                apaCitation: "The Daily Star. (2024, June 13). Procure more domestic software to boost ICT sector: Expert. https://www.thedailystar.net/business/news/procure-more-domestic-software-boost-ict-sector-expert-3632451"
+            },
+            {
+                id: 21,
+                category: "whitepaper-policy",
+                categoryLabel: "শ্বেতপত্র ও গবেষণা দলিল (অ্যাক্ট ৪)",
+                badgeColor: "red",
+                financialTag: "স্বাধীন টেকনিক্যাল অডিট ও গভর্ন্যান্স সংস্কার",
+                title: "ডিজিটাল বাংলাদেশ: গভর্ন্যান্স ব্যর্থতার উপাখ্যান ও প্রতিটি আইটি প্রজেক্ট পাসের আগে স্বাধীন টেকনিক্যাল অডিটের আবশ্যকতা",
+                summary: "১০০ টাকার ঘুষ দিয়ে ডিজিটাল পরিচয় কেনার সংস্কৃতি ও কংক্রিট বিলাস বন্ধ করে সিস্টেমের আর্কিটেকচার বদলানো এবং স্বাধীন টেকনিক্যাল অডিট বাধ্যতামূলক করার সম্পাদকীয় বিশ্লেষণ।",
+                sourceName: "দ্য ডেইলি স্টার সম্পাদকীয় (The Daily Star Editorial)",
+                date: "২০২৫",
+                image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
+                newsStamp: "The Daily Star Editorial • Governance Failures",
+                url: "https://www.thedailystar.net/opinion/editorial/news/digital-bangladesh-tale-governance-failures-4051281",
+                apaCitation: "The Daily Star. (2025). Digital Bangladesh: A tale of governance failures. https://www.thedailystar.net/opinion/editorial/news/digital-bangladesh-tale-governance-failures-4051281"
+            }
+        ];
+
+        let activeCategory = 'all';
+
+        function renderCards(cards) {
+            const grid = document.getElementById('cardsGrid');
+            const emptyState = document.getElementById('emptyState');
+
+            if (cards.length === 0) {
+                grid.innerHTML = '';
+                emptyState.classList.remove('hidden');
+                return;
+            }
+
+            emptyState.classList.add('hidden');
+
+            grid.innerHTML = cards.map(item => {
+                const badgeStyle = item.badgeColor === 'red'
+                    ? 'bg-[#F42A41]/15 text-[#F42A41] border-[#F42A41]/40'
+                    : 'bg-[#2ECC8F]/15 text-[#2ECC8F] border-[#2ECC8F]/40';
+
+                const cardBorderStyle = item.isCreatorCard
+                    ? 'border-2 border-[#2ECC8F] ring-2 ring-[#2ECC8F]/20'
+                    : 'border border-[#1E4638] hover:border-[#2ECC8F]';
+
+                return `
+                <article class="flex flex-col bg-[#0D211A] ${cardBorderStyle} rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1 card-shadow group">
+                    <!-- News Thumbnail Header -->
+                    <div class="relative h-48 w-full overflow-hidden bg-[#07130F]">
+                        <img 
+                            src="${item.image}" 
+                            alt="${item.title}" 
+                            loading="lazy"
+                            onerror="this.src='https://placehold.co/800x450/0D211A/2ECC8F?text=Documentary+Evidence'"
+                            class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 opacity-80"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0D211A] via-[#0D211A]/45 to-transparent"></div>
+                        
+                        <!-- Top Left Source Stamp -->
+                        <div class="absolute top-3 left-3">
+                            <span class="px-2.5 py-1 rounded-md bg-[#07130F]/90 border border-[#1E4638] text-[#F2F8F4] text-[11px] font-bold tracking-wide backdrop-blur-md">
+                                ${item.newsStamp}
+                            </span>
+                        </div>
+
+                        <!-- Top Right ID Badge -->
+                        <div class="absolute top-3 right-3">
+                            <span class="px-2.5 py-0.5 rounded bg-[#F42A41] text-white text-xs font-extrabold">
+                                #${String(item.id).padStart(2, '0')}
+                            </span>
+                        </div>
+
+                        <!-- Bottom Financial / Claim Highlight on Image -->
+                        <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between gap-2">
+                            <span class="px-2.5 py-1 rounded-md bg-[#07130F]/95 border border-[#2ECC8F]/60 text-[#2ECC8F] text-xs font-bold shadow">
+                                ${item.financialTag}
+                            </span>
+                            <span class="text-[11px] text-[#A3C2B5] bg-[#07130F]/90 px-2 py-0.5 rounded border border-[#1E4638]">
+                                ${item.date}
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Card Body -->
+                    <div class="p-5 flex-grow flex flex-col">
+                        <div class="mb-2.5">
+                            <span class="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-bold border ${badgeStyle}">
+                                ${item.categoryLabel}
+                            </span>
+                        </div>
+
+                        <h3 class="text-base sm:text-lg font-bold text-[#F2F8F4] group-hover:text-[#2ECC8F] transition-colors leading-snug mb-2.5">
+                            ${item.title}
+                        </h3>
+
+                        <p class="text-xs sm:text-sm text-[#A3C2B5] leading-relaxed mb-4 flex-grow">
+                            ${item.summary}
+                        </p>
+
+                        <!-- Source Info Box -->
+                        <div class="bg-[#07130F]/90 border border-[#1E4638] rounded-xl p-3 mb-4 text-xs">
+                            <div class="text-[#A3C2B5] mb-0.5">প্রকাশক / দালিলিক সূত্র:</div>
+                            <div class="text-[#F2F8F4] font-bold">${item.sourceName}</div>
+                        </div>
+
+                        <!-- Card Footer Buttons -->
+                        <div class="flex items-center gap-2.5 pt-2 border-t border-[#1E4638]">
+                            <a 
+                                href="${item.url}" 
+                                target="${item.isCreatorCard ? '_self' : '_blank'}" 
+                                rel="noopener noreferrer"
+                                class="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl bg-[#F42A41] hover:bg-[#d91e34] text-white text-xs sm:text-sm font-bold transition"
+                            >
+                                <span>${item.isCreatorCard ? 'ম্যাট্রিক্সে বিবরণ দেখুন' : 'মূল প্রতিবেদন দেখুন'}</span>
+                                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                </svg>
+                            </a>
+                            <button 
+                                onclick="copySingleCitation(${item.id})"
+                                class="px-3 py-2 rounded-xl bg-[#07130F] hover:bg-[#122B22] text-[#2ECC8F] border border-[#2ECC8F]/50 text-xs sm:text-sm font-bold transition cursor-pointer"
+                                title="APA 7 সাইটেশন কপি করুন"
+                            >
+                                APA 7 কপি
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                `;
+            }).join('');
+        }
+
+        function setCategory(cat) {
+            activeCategory = cat;
+            const buttons = document.querySelectorAll('.cat-btn');
+            buttons.forEach(btn => {
+                if (btn.getAttribute('data-cat') === cat) {
+                    btn.className = 'cat-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition bg-[#F42A41] text-white cursor-pointer';
+                } else {
+                    btn.className = 'cat-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-medium transition bg-[#07130F] text-[#A3C2B5] border border-[#1E4638] hover:border-[#2ECC8F] cursor-pointer';
+                }
+            });
+            filterCards();
+        }
+
+        function filterCards() {
+            const query = document.getElementById('searchInput').value.trim().toLowerCase();
+            const filtered = referencesData.filter(item => {
+                const matchesCat = activeCategory === 'all' || item.category === activeCategory;
+                const matchesQuery = !query || 
+                    item.title.toLowerCase().includes(query) ||
+                    item.summary.toLowerCase().includes(query) ||
+                    item.sourceName.toLowerCase().includes(query) ||
+                    item.financialTag.toLowerCase().includes(query);
+                return matchesCat && matchesQuery;
+            });
+            renderCards(filtered);
+        }
+
+        function resetFilters() {
+            document.getElementById('searchInput').value = '';
+            setCategory('all');
+        }
+
+        function copyTextToClipboard(text, message) {
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+
+            const toast = document.getElementById('toastBox');
+            const toastMsg = document.getElementById('toastMessage');
+            toastMsg.textContent = message;
+            toast.classList.remove('hidden');
+            setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 3200);
+        }
+
+        function copySingleCitation(id) {
+            const item = referencesData.find(r => r.id === id);
+            if (item) {
+                copyTextToClipboard(item.apaCitation, `রেফারেন্স #${id}-এর APA 7 সাইটেশন কপি হয়েছে!`);
+            }
+        }
+
+        // Initial render
+        window.addEventListener('DOMContentLoaded', () => {
+            renderCards(referencesData);
+        });
+    </script>
+</body>
+</html>
